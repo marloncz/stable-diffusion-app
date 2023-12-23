@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "stable-diffusion-app"
+version = "0.1.0"
+description = ""
+authors = ["marloncz <marlon.ziegler93@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stable_diffusion_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+transformers = "^4.36.2"
+torch = "^2.1.2"
+diffusers = "^0.24.0"
+accelerate = "^0.25.0"
+scipy = "^1.11.4"
+safetensors = "^0.4.1"
+ipykernel = "^6.27.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
